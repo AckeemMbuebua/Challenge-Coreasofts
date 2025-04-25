@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="./src/style/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <body class="bg-[#030712] min-h-[200vh] scroll-smooth">
+    <header
+      class="fixed top-0 left-0 w-full shadow-lg flex justify-between items-center transition-all duration-500 px-6 md:px-[100px] py-6 md:py-10 z-[100] bg-[#030712] sm:z-200"
+    >
+      <a
+        href="#home"
+        class="logo relative text-white font-bold text-sm uppercase transition-all duration-500"
+      >
+        coreasofts
+      </a>
+
+      <button id="menu-toggle" class="md:hidden text-white text-2xl">☰</button>
+
+      <div
+        id="menu"
+        class="hidden md:flex flex-col md:flex-row md:items-center md:gap-4 absolute md:static top-full left-0 w-full md:w-auto bg-[#030712] md:bg-transparent p-4 md:p-0 z-200"
+      >
+        <ul
+          class="relative flex flex-col md:flex-row justify-center items-center gap-4"
+        >
+          <li>
+            <a
+              href="#home"
+              class="relative text-white tracking-[2px] transition-all duration-500"
+              >Accueil</a
+            >
+          </li>
+          <li>
+            <a
+              href="#services"
+              class="relative text-white tracking-[2px] transition-all duration-500"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Projets"
+              class="relative text-white tracking-[2px] transition-all duration-500"
+              >Projets</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="#our-team"
+              class="relative text-white transition-all duration-500"
+              >Team</a
+            >
+          </li>
+          <li>
+            <a
+              href="/contact.html"
+              class="relative text-white transition-all duration-500"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="relative w-full h-screen" id="home">
+      <div
+        class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style="
+          background-image: url('./src/images/programming-background-with-person-working-with-codes-computer.jpg');
+          opacity: 0.2;
+          z-index: 0;
+        "
+      ></div>
+
+      <div
+        class="absolute inset-0 flex flex-col items-center justify-center z-10 gap-4"
+      >
+        <h1
+          id="title"
+          class="text-4xl md:text-6xl font-black text-white opacity-0 translate-y-10 transition-all duration-700"
+        >
+          Coreasofts Innovant
+        </h1>
+        <p class="text-white max-w-90 text-center">
+          Coreasofts est une entreprise spécialisée dans la conception,
+          réalisation et analyse de solutions digitales adaptées aux besoins des
+          entreprises et entrepreneurs en RDC.
+        </p>
+        <a
+          href="#"
+          class="inline-block bg-blue-500 hover:bg-blue-600 uppercase text-white font-semibold px-6 py-4 rounded transition-all duration-300 shadow-lg"
+        >
+          Contactez-Nous
+        </a>
+      </div>
+    </section>
+
+    <section
+      class="min-h-screen bg-[#e1e1e1] py-20 flex flex-col items-center gap-16"
+      id="Projets"
+    >
+      <h2
+        class="text-3xl md:text-4xl lg:text-6xl font-black text-[#030712] transition-all duration-700 z-100"
+      >
+        Nos Projets
+      </h2>
+      <div class="relative overflow-hidden w-full group">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center"
+          >
+            <div
+              class="bg-white shadow-lg rounded-2xl p-6 w-64 transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+            >
+              <div class="text-4xl font-bold text-blue-600 mb-2">+120</div>
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                Projets Réalisés
+              </h3>
+              <p class="text-sm text-gray-500">
+                Des solutions concrètes livrées à nos clients avec succès.
+              </p>
+            </div>
+
+            <div
+              class="bg-white shadow-lg rounded-2xl p-6 w-64 transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+            >
+              <div class="text-4xl font-bold text-green-600 mb-2">98%</div>
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                Satisfaction Client
+              </h3>
+              <p class="text-sm text-gray-500">
+                La majorité de nos clients nous recommandent.
+              </p>
+            </div>
+
+            <div
+              class="bg-white shadow-lg rounded-2xl p-6 w-64 transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+            >
+              <div class="text-4xl font-bold text-purple-600 mb-2">15</div>
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                Applications Mobiles
+              </h3>
+              <p class="text-sm text-gray-500">
+                Des apps performantes et intuitives sur Android & iOS.
+              </p>
+            </div>
+
+            <div
+              class="bg-white shadow-lg rounded-2xl p-6 w-64 transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+            >
+              <div class="text-4xl font-bold text-yellow-600 mb-2">30+</div>
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                Sites Web Développés
+              </h3>
+              <p class="text-sm text-gray-500">
+                Des vitrines modernes pour booster la visibilité.
+              </p>
+            </div>
+
+            <div
+              class="bg-white shadow-lg rounded-2xl p-6 w-64 transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+            >
+              <div class="text-4xl font-bold text-red-500 mb-2">10</div>
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                Partenaires Officiels
+              </h3>
+              <p class="text-sm text-gray-500">
+                Nous collaborons avec des acteurs clés du secteur.
+              </p>
+            </div>
+
+            <div
+              class="bg-white shadow-lg rounded-2xl p-6 w-64 transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+            >
+              <div class="text-4xl font-bold text-indigo-600 mb-2">24/7</div>
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                Support Disponible
+              </h3>
+              <p class="text-sm text-gray-500">
+                Un accompagnement continu pour chaque projet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="services"
+      class="md:mx-24 mx-0 mx-8 md:my-20 my-5 flex flex-col gap-10 items-center content-center"
+    >
+      <h2
+        class="text-3xl md:text-4xl lg:text-6xl font-black text-white transition-all duration-700 z-100"
+      >
+        Nos Services
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+          class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+        >
+          <a href="#Web">
+            <img
+              class="rounded-t-lg"
+              src="./src/images/pexels-pixabay-39284.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#Développement">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                🔧 Développement Web sur Mesure
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              réation de sites performants, rapides et responsives adaptés aux
+              besoins spécifiques de chaque client.
+            </p>
+            <a
+              href="#Développement"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Voir Plus
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div
+          class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+        >
+          <a href="#Mobiles">
+            <img
+              class="rounded-t-lg w-full h-64"
+              src="./src/images/16683353_5757453.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#Mobiles">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                📱 Applications Mobiles Modernes
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Développement d’applications Android et iOS intuitives, rapides,
+              avec une expérience utilisateur fluide.
+            </p>
+            <a
+              href="#Mobiles"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Voir plus
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div
+          class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+        >
+          <a href="#Design">
+            <img
+              class="rounded-t-lg"
+              src="./src/images/2148397869.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#Design">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                🎨 Design Graphique & Identité Visuelle
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Conception de logos, flyers, chartes graphiques et visuels
+              engageants pour renforcer votre image de marque.
+            </p>
+            <a
+              href="#Design"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Voir plus
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+        >
+          <a href="#Marketing">
+            <img
+              class="rounded-t-lg"
+              src="./src/images/4102879_971.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#Marketing">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                🚀 Stratégie Digitale & Marketing
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Mise en place de campagnes ciblées pour booster votre visibilité
+              en ligne et générer plus de leads.
+            </p>
+            <a
+              href="#Marketing"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Voir plus
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+        >
+          <a href="#Sécurité">
+            <img
+              class="rounded-t-lg"
+              src="./src/images/2149901789.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#Sécurité">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                🔐 Sécurité & Maintenance
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Surveillance, sauvegardes, mises à jour et protection continue de
+              votre site ou application.
+            </p>
+            <a
+              href="#Sécurité"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Voir plus
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="min-h-screen bg-[#e1e1e1] py-20 flex flex-col items-center gap-16"
+      id="our-team"
+    >
+      <h2
+        class="text-3xl md:text-4xl lg:text-6xl font-black text-[#030712] transition-all duration-700 z-100"
+      >
+        Notre Équipe
+      </h2>
+      <div class="relative overflow-hidden w-full group">
+        <div class="scroll-track flex gap-8 w-max">
+          <div class="flex gap-8">
+            <div
+              class="card bg-[#e9e9e9] shadow-lg p-6 rounded-2xl flex flex-col items-center gap-4 pt-12 w-72 relative"
+            >
+              <a href="#" class="overflow-hidden rounded-full w-44 h-44">
+                <img
+                  src="./src/images/Team/1.png"
+                  alt="Team"
+                  class="w-full h-full object-cover rounded-full transition-transform duration-300 hover:scale-105"
+                />
+              </a>
+
+              <p class="text-center text-gray-600">
+                Création de sites web, applications et logiciels. Passionné par
+                le code et l'innovation.
+              </p>
+
+              <div
+                class="absolute top-0 p-4 font-semibold rounded-2xl bg-[#030712] w-full text-center shadow-lg text-[#fff] name-slide-up"
+              >
+                Mk Sarah
+              </div>
+            </div>
+
+            <div
+              class="card bg-[#e9e9e9] shadow-lg p-6 rounded-2xl flex flex-col items-center gap-4 pt-12 w-72 relative"
+            >
+              <a href="#" class="overflow-hidden rounded-full w-44 h-44">
+                <img
+                  src="./src/images/Team/2.png"
+                  alt="Team"
+                  class="w-full h-full object-cover rounded-full transition-transform duration-300 hover:scale-105"
+                />
+              </a>
+              <p class="text-center text-sm text-gray-700 leading-relaxed">
+                Coordination des équipes et gestion des projets. Assure la
+                qualité et la livraison à temps.
+              </p>
+
+              <div
+                class="absolute top-0 p-4 font-semibold rounded-2xl bg-[#030712] w-full text-center shadow-lg text-[#fff] name-slide-up"
+              >
+                Robinson
+              </div>
+            </div>
+
+            <div
+              class="card bg-[#e9e9e9] shadow-lg p-6 rounded-2xl flex flex-col items-center gap-4 pt-12 w-72 relative"
+            >
+              <a href="#" class="overflow-hidden rounded-full w-44 h-44">
+                <img
+                  src="./src/images/Team/3.png"
+                  alt="Team"
+                  class="w-full h-full object-cover rounded-full transition-transform duration-300 hover:scale-105"
+                />
+              </a>
+              <p class="text-center text-sm text-gray-700 leading-relaxed">
+                Création d’interfaces élégantes et ergonomiques pour améliorer
+                l’expérience utilisateur
+              </p>
+              <div
+                class="absolute top-0 p-4 font-semibold rounded-2xl bg-[#030712] w-full text-center shadow-lg text-[#fff] name-slide-up"
+              >
+                Marie Cury
+              </div>
+            </div>
+
+            <div
+              class="card bg-[#e9e9e9] shadow-lg p-6 rounded-2xl flex flex-col items-center gap-4 pt-12 w-72 relative"
+            >
+              <a href="#" class="overflow-hidden rounded-full w-44 h-44">
+                <img
+                  src="./src/images/Team/4.png"
+                  alt="Team"
+                  class="w-full h-full object-cover rounded-full transition-transform duration-300 hover:scale-105"
+                />
+              </a>
+              <p class="text-center text-sm text-gray-700 leading-relaxed">
+                Gestion des infrastructures informatiques, des serveurs et de la
+                sécurité des réseaux.
+              </p>
+              <div
+                class="absolute top-0 p-4 font-semibold rounded-2xl bg-[#030712] w-full text-center shadow-lg text-[#fff] name-slide-up"
+              >
+                Lady ADDA
+              </div>
+            </div>
+
+            <div
+              class="card bg-[#e9e9e9] shadow-lg p-6 rounded-2xl flex flex-col items-center gap-4 pt-12 w-72 relative"
+            >
+              <a href="#" class="overflow-hidden rounded-full w-44 h-44">
+                <img
+                  src="./src/images/Team/5.png"
+                  alt="Team"
+                  class="w-full h-full object-cover rounded-full transition-transform duration-300 hover:scale-105"
+                />
+              </a>
+              <p class="text-center text-sm text-gray-700 leading-relaxed">
+                Automatisation des déploiements et gestion des environnements
+                pour assurer une efficacité maximale.
+              </p>
+              <div
+                class="absolute top-0 p-4 font-semibold rounded-2xl bg-[#030712] w-full text-center shadow-lg text-[#fff] name-slide-up"
+              >
+                Bill Adams
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-8">
+            <div
+              class="card bg-[#e9e9e9] shadow-lg p-6 rounded-2xl flex flex-col items-center gap-4 pt-12 w-72 relative"
+            >
+              <a href="#" class="overflow-hidden rounded-full w-44 h-44">
+                <img
+                  src="./src/images/Team/1.png"
+                  alt="Team"
+                  class="w-full h-full object-cover rounded-full transition-transform duration-300 hover:scale-105"
+                />
+              </a>
+
+              <p class="text-center text-gray-600">
+                Création de sites web, applications et logiciels. Passionné par
+                le code et l'innovation.
+              </p>
+
+              <div
+                class="absolute top-0 p-4 font-semibold rounded-2xl bg-[#030712] w-full text-center shadow-lg text-[#fff] name-slide-up"
+              >
+                Mk Sarah
+              </div>
+            </div>
+
+            <div
+              class="card bg-[#e9e9e9] shadow-lg p-6 rounded-2xl flex flex-col items-center gap-4 pt-12 w-72 relative"
+            >
+              <a href="#" class="overflow-hidden rounded-full w-44 h-44">
+                <img
+                  src="./src/images/Team/2.png"
+                  alt="Team"
+                  class="w-full h-full object-cover rounded-full transition-transform duration-300 hover:scale-105"
+                />
+              </a>
+              <p class="text-center text-sm text-gray-700 leading-relaxed">
+                Coordination des équipes et gestion des projets. Assure la
+                qualité et la livraison à temps.
+              </p>
+
+              <div
+                class="absolute top-0 p-4 font-semibold rounded-2xl bg-[#030712] w-full text-center shadow-lg text-[#fff] name-slide-up"
+              >
+                Robinson
+              </div>
+            </div>
+
+            <div
+              class="card bg-[#e9e9e9] shadow-lg p-6 rounded-2xl flex flex-col items-center gap-4 pt-12 w-72 relative"
+            >
+              <a href="#" class="overflow-hidden rounded-full w-44 h-44">
+                <img
+                  src="./src/images/Team/3.png"
+                  alt="Team"
+                  class="w-full h-full object-cover rounded-full transition-transform duration-300 hover:scale-105"
+                />
+              </a>
+              <p class="text-center text-sm text-gray-700 leading-relaxed">
+                Création d’interfaces élégantes et ergonomiques pour améliorer
+                l’expérience utilisateur
+              </p>
+              <div
+                class="absolute top-0 p-4 font-semibold rounded-2xl bg-[#030712] w-full text-center shadow-lg text-[#fff] name-slide-up"
+              >
+                Marie Cury
+              </div>
+            </div>
+
+            <div
+              class="card bg-[#e9e9e9] shadow-lg p-6 rounded-2xl flex flex-col items-center gap-4 pt-12 w-72 relative"
+            >
+              <a href="#" class="overflow-hidden rounded-full w-44 h-44">
+                <img
+                  src="./src/images/Team/4.png"
+                  alt="Team"
+                  class="w-full h-full object-cover rounded-full transition-transform duration-300 hover:scale-105"
+                />
+              </a>
+              <p class="text-center text-sm text-gray-700 leading-relaxed">
+                Gestion des infrastructures informatiques, des serveurs et de la
+                sécurité des réseaux.
+              </p>
+              <div
+                class="absolute top-0 p-4 font-semibold rounded-2xl bg-[#030712] w-full text-center shadow-lg text-[#fff] name-slide-up"
+              >
+                Lady ADDA
+              </div>
+            </div>
+
+            <div
+              class="card bg-[#e9e9e9] shadow-lg p-6 rounded-2xl flex flex-col items-center gap-4 pt-12 w-72 relative"
+            >
+              <a href="#" class="overflow-hidden rounded-full w-44 h-44">
+                <img
+                  src="./src/images/Team/5.png"
+                  alt="Team"
+                  class="w-full h-full object-cover rounded-full transition-transform duration-300 hover:scale-105"
+                />
+              </a>
+              <p class="text-center text-sm text-gray-700 leading-relaxed">
+                Automatisation des déploiements et gestion des environnements
+                pour assurer une efficacité maximale.
+              </p>
+              <div
+                class="absolute top-0 p-4 font-semibold rounded-2xl bg-[#030712] w-full text-center shadow-lg text-[#fff] name-slide-up"
+              >
+                Bill Adams
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="md:mx-24 mx-8" id="footer">
+      <div
+        class="min-h-md bg-[#030712] py-20 flex md:flex-row flex-col items-center justify-between gap-16"
+      >
+        <div class="">
+          <h4 class="text-white font-medium text-xl md:text-3xl">
+            Abonnez-vous
+          </h4>
+          <p class="text-white">
+            Recevez nos actualités directement dans votre boîte mail.
+          </p>
+          <div class="w-full max-w-md mx-auto mt-6">
+            <form class="flex flex-col items-center gap-4">
+              <input
+                type="email"
+                placeholder="Entrez votre email"
+                class="w-full px-4 py-3 rounded-sm bg-white shadow-md text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+              <button
+                type="submit"
+                class="px-6 py-3 bg-blue-600 text-white rounded-sm w-full shadow-md hover:bg-blue-700 transition duration-300"
+              >
+                S’abonner
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="max-w-8xl w-full grid grid-cols-1 md:grid-cols-3 gap-8 text-white"
+        >
+          <div class="">
+            <h3 class="text-lg font-semibold mb-4">Contact</h3>
+            <p>Email : contact@tonsite.com</p>
+            <p>Téléphone : +243 97 000 0000</p>
+            <p>Adresse : Lubumbashi, RDC</p>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Liens rapides</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#home" class="hover:text-blue-700 transition"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a href="#services" class="hover:text-blue-700 transition"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="hover:text-blue-700 transition"
+                  >À propos</a
+                >
+              </li>
+              <li>
+                <a href="#our-team" class="hover:text-blue-700 transition"
+                  >Notre équipe</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-blue-700 transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Suivez-nous</h3>
+            <div class="flex space-x-4">
+              <a href="#Facebook" class="hover:text-blue-700 transition"
+                >Facebook</a
+              >
+              <a href="#Instagram" class="hover:text-blue-700 transition"
+                >Instagram</a
+              >
+              <a href="#LinkedIn" class="hover:text-blue-700 transition"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4 border-t-2 border-gray-300 rounded-full" />
+      <div class="text-left text-sm text-gray-500 py-4">
+        &copy; 2025 Coreasofts. Tous droits réservés.
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
